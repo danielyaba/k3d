@@ -35,6 +35,8 @@ deploy-argocd:
 # Deploy ArgoCD
 upgrade-argocd:
     echo "Upgrading ArgoCD..."
+    helm repo add argo
+    helm repo update
     helm upgrade argocd argo/argo-cd --values argocd-values.yaml --namespace argocd --create-namespace
     echo "ArgoCD deployed successfully."
     echo "Access ArgoCD UI: http://localhost:8080"
@@ -60,10 +62,14 @@ get-argocd-pass:
 apply-devops-apps:
     kubectl apply -f devops-apps.yaml
 
+apply-external-apps:
+    kubectl apply -f external-apps.yaml
+
 # Connect to ArgoCD with port-forward directly to the ArgoCD service
 argocd-port-forward:
     kubectl port-forward --namespace argocd svc/argocd-server 8080:80
 
 # Create cluster with all components deployed
 spinup-cluster-with-argocd: create-cluster deploy-argocd add-app-of-apps-repo apply-devops-apps argocd-port-forward
+
 

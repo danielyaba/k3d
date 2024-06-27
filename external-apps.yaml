@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: external-apps
+  namespace: argocd
+spec:
+  destination:
+    name: in-cluster
+    namespace: argocd
+  source:
+    path: external-apps-chart
+    repoURL: https://github.com/danielyaba/argocd-app-of-apps
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
