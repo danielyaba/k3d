@@ -69,6 +69,6 @@ argocd-port-forward:
     kubectl port-forward --namespace argocd svc/argocd-server 8080:80
 
 # Create cluster with all components deployed
-spinup-cluster-with-argocd: create-cluster deploy-argocd add-app-of-apps-repo apply-devops-apps argocd-port-forward
+spinup-cluster-with-argocd: create-cluster deploy-argocd add-app-of-apps-repo apply-devops-apps get-argocd-pass argocd-port-forward
 
 
