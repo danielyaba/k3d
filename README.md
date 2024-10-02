@@ -30,35 +30,35 @@ Use `just` with the recepie
 
 ##### Available Recepies:  
 * add-app-of-apps-repo:  
-Applies the ArgoCD App-of-Apps repository (You should create your own repository similarly to this [repository](https://github.com/danielyaba/argocd-app-of-apps)  
+Applie the ArgoCD App-of-Apps repository (You should create your own repository similarly to this [repository](https://github.com/danielyaba/argocd-app-of-apps)  
 
 
 * apply-devops-apps:  
-Applies the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
+Applie the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
 
 * apply-external-apps:  
-Applies the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
+Applie the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
 
 * argocd-port-forward:  
-Creates port-forward to ArgoCD service on `http://localhost:8080`
+Create port-forward to ArgoCD service on `http://localhost:8080`
 
 * create-cluster:  
-Creates fresh kubernetes cluster with the specified configuration (justfile#3)
+Create fresh kubernetes cluster with the specified configuration (justfile#3)
 
 * delete-argocd:  
-Deletes ArgoCD namespace from the cluster along with its reousrces 
+Delete ArgoCD namespace from the cluster along with its reousrces 
 
 * delete-cluster:  
-Deletes the K3D cluster
+Delete the K3D cluster
 
 * deploy-argocd:
-Installs the ArgoCD Helm chart and wait for the deployment `argocd-repo-server` to be ready
+Install the ArgoCD Helm chart and wait for the deployment `argocd-repo-server` to be ready
 
 * get-argocd-pass:  
-Prints the ArgoCD admin password
+Print the ArgoCD admin password
 
 * spinup-cluster-with-argocd:  
-Create a K3D cluster and install the ArogCD Helm chart
+Create a K3D cluster, install the ArogCD Helm chart and apply the devops-apps application manifest
 
 * upgrade-argocd:  
-Upgrades the ArogCD Helm chart
+Upgrade the ArogCD Helm chart
