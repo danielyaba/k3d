@@ -5,7 +5,6 @@ API_PORT := "6550"
 LB_PORT := "8080"
 LB_TARGET_PORT := "80"
 CLUSTER_NAME := "my-cluster"
-TIMEOUT := "10s"
 
 # List tasks,
 default:
