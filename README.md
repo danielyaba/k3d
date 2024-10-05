@@ -30,15 +30,14 @@ CLUSTER_NAME := "my-cluster"
 Use `just` with the recepie    
 
 ##### Available Recepies:  
-* add-app-of-apps-repo:  
-Applie the ArgoCD App-of-Apps repository (You should create your own repository similarly to this [repository](https://github.com/danielyaba/argocd-app-of-apps)  
+* **add-app-of-apps-repo:**  
+Apply the ArgoCD App-of-Apps repository (You should create your own repository similarly to this [repository](https://github.com/danielyaba/argocd-app-of-apps)  
 
-
-* apply-devops-apps:  
-Applie the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
+* **apply-devops-apps:**  
+Apply the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
 
 * **apply-external-apps:**  
-Applie the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
+Apply the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
 
 * **argocd-port-forward:**  
 Create port-forward to ArgoCD service on `http://localhost:8080`
