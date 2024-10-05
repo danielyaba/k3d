@@ -6,6 +6,7 @@ This repository lets you spin up a kubernetes cluster easily based on K3D.
 * [Justfile](https://just.systems/man/en/) - Alternative to Makefile
 * [K3D](https://k3d.io/) - K3D CLI
 * [Kubectl](https://kubernetes.io/docs/tasks/tools/) - Kubectl CLI to interact with the kubernetes cluster
+* [Docker](https://docs.docker.com/get-started/get-docker/) - Docker Desktop to run the kubernetes cluster
 
 
 ## Deployment
