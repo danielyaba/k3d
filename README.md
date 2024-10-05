@@ -37,29 +37,29 @@ Applie the ArgoCD App-of-Apps repository (You should create your own repository 
 * apply-devops-apps:  
 Applie the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
 
-* apply-external-apps:  
+* **apply-external-apps:**  
 Applie the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
 
-* argocd-port-forward:  
+* **argocd-port-forward:**  
 Create port-forward to ArgoCD service on `http://localhost:8080`
 
-* create-cluster:  
+* **create-cluster:**  
 Create fresh kubernetes cluster with the specified configuration (justfile#3)
 
-* delete-argocd:  
+* **delete-argocd:**  
 Delete ArgoCD namespace from the cluster along with its reousrces 
 
-* delete-cluster:  
+* **delete-cluster:**  
 Delete the K3D cluster
 
-* deploy-argocd:
+* **deploy-argocd:**  
 Install the ArgoCD Helm chart and wait for the deployment `argocd-repo-server` to be ready
 
-* get-argocd-pass:  
+* **get-argocd-pass:**  
 Print the ArgoCD admin password
 
-* spinup-cluster-with-argocd:  
+* **spinup-cluster-with-argocd:**  
 Create a K3D cluster, install the ArogCD Helm chart and apply the devops-apps application manifest
 
-* upgrade-argocd:  
+* **upgrade-argocd:**  
 Upgrade the ArogCD Helm chart
