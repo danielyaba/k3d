@@ -34,10 +34,10 @@ Use `just` with the recepie
 Apply the ArgoCD App-of-Apps repository (You should create your own repository similarly to this [repository](https://github.com/danielyaba/argocd-app-of-apps)  
 
 * **apply-devops-apps:**  
-Apply the [devops applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
+Apply the [devops-apps applications manifest](devops-apps.yaml#1) for installing all infrastructure charts
 
 * **apply-external-apps:**  
-Apply the [external applications manifest](external-apps.yaml#1) for installing all external applications charts
+Apply the [external-apps applications manifest](external-apps.yaml#1) for installing all external applications charts
 
 * **argocd-port-forward:**  
 Create port-forward to ArgoCD service on `http://localhost:8080`
@@ -58,7 +58,7 @@ Install the ArgoCD Helm chart and wait for the deployment `argocd-repo-server` t
 Print the ArgoCD admin password
 
 * **spinup-cluster-with-argocd:**  
-Create a K3D cluster, install the ArogCD Helm chart and apply the devops-apps application manifest
+Create a K3D cluster, install the ArogCD Helm chart and apply the [devops-apps applications manifest](devops-apps.yaml#1)
 
 * **upgrade-argocd:**  
 Upgrade the ArogCD Helm chart
