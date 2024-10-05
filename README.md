@@ -43,7 +43,7 @@ Apply the [external applications manifest](external-apps.yaml#1) for installing 
 Create port-forward to ArgoCD service on `http://localhost:8080`
 
 * **create-cluster:**  
-Create fresh kubernetes cluster with the specified configuration (justfile#3)
+Create fresh kubernetes cluster with the specified [configuration](justfile#3)
 
 * **delete-argocd:**  
 Delete ArgoCD namespace from the cluster along with its reousrces 
