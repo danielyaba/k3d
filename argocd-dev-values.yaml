@@ -1,0 +1,12 @@
+global:
+  domain: localhost:8081
+
+configs:
+  params:
+    server.insecure: true
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hostname: localhost
